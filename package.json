@@ -1,0 +1,29 @@
+{
+  "name": "pink",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "gulp": "^3.9.1"
+  },
+  "devDependencies": {
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-clean-css": "^2.0.4",
+    "gulp-concat-css": "^2.2.0",
+    "gulp-less": "^3.0.5",
+    "gulp-rename": "^1.2.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ivankalachikov/pink.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ivankalachikov/pink/issues"
+  },
+  "homepage": "https://github.com/Ivankalachikov/pink#readme",
+  "description": ""
+}
