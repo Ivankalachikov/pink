@@ -1,0 +1,43 @@
+@import "variables.less";
+@import "mixin.less";
+
+.page-header {
+	background: @bg-color-dark url("../img/iphone-in-hand-xs.png") bottom center no-repeat, url("../img/header-img-xs.jpg") center center no-repeat;
+	color: @white-text;
+	min-height: 486px;
+	width:320px;
+	margin:0 auto;
+
+	&__top-line{
+		background-color:rgba(0,0,0,.3);
+		.clearfix();
+		display: block;
+	}
+
+	&__content{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	&__logo-link{
+		background: url("../img/head-logo-xs.png") 0 0 no-repeat;
+		width: 74px;
+		height: 23px;
+		display:block;
+		float: left;
+	}
+
+	&__nav-wrap{
+		.sprite();
+		.sprite-sandwich-xs();
+		float: right;
+	}
+
+
+}
+
+.page-header__inner {
+	.container();
+	
+	
+}
