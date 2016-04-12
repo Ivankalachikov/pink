@@ -1,0 +1,60 @@
+@import "variables.less";
+@import "mixin.less";
+
+.features{
+	&__inner{
+		.container();
+		text-align: center;
+		color:@dark-text;
+		padding-top: 40px;
+	}
+
+	&__title{
+		font-size: 24px;
+		line-height: 1,5em;
+		font-weight: 300;
+		padding-bottom: 30px;
+		padding: 0 2em;
+	}
+
+	&__title-wrap{
+		background-color: #fff;
+	}
+
+	&__wrap1{
+		padding-bottom: 35px;
+		position: relative;
+	}
+
+	&__wrap1:after{
+		content:"";
+		position: absolute;
+		bottom:0;
+		left:50%;
+		margin-left: -160px;
+		border: 320px solid transparent;
+		border-bottom: 30px solid @bg-color-light;
+		border-right:100% solid @bg-color-light;
+	}
+
+	&__wrap2{
+		background-color: @bg-color-light;
+		padding-top: 50px;
+		padding-bottom: 264px;
+		background: @bg-color-light url("../img/iphone-xs.png") center bottom -43px no-repeat;
+	}
+
+	&__list-title{
+		font-size: 18px;
+		font-weight: 700;
+		line-height: 1.33em;
+		margin-bottom: 18px;
+	}
+
+	&__list-text{
+		font-size: 14px;
+		line-height: 1.71em;
+		margin: 0;
+		margin-bottom: 40px;
+	}
+}

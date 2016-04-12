@@ -11,30 +11,30 @@
 				<div class="page-header__top-line">
 					<div class="page-header__logo-wrap">
 						<a href="#" class="page-header__logo-link">
-							<img src="" alt="" class="page-header__logo-img">
 						</a>
 					</div>
-					<div class="page-header__nav-wrap">
-						<nav class="main-nav">
-							<ul class="main-nav__list">
-								<li class="main-nav__list-item main-nav__list-item--active">
-									<a href="" class="main-nav__list-item-link">
-										Пунтк меню 1
-									</a>
-								</li>
-								<li class="main-nav__list-item">
-									<a href="" class="main-nav__list-item-link">
-										Пунтк меню 2
-									</a>
-								</li>
-								<li class="main-nav__list-item">
-									<a href="" class="main-nav__list-item-link">
-										Пунтк меню 3
-									</a>
-								</li>
-							</ul>
-						</nav>
-					</div>
+					<a href="#"><div class="page-header__nav-wrap"></div>
+					</a>
+							<nav class="main-nav">
+								<ul class="main-nav__list">
+									<li class="main-nav__list-item main-nav__list-item--active">
+										<a href="" class="main-nav__list-item-link">
+											Пунтк меню 1
+										</a>
+									</li>
+									<li class="main-nav__list-item">
+										<a href="" class="main-nav__list-item-link">
+											Пунтк меню 2
+										</a>
+									</li>
+									<li class="main-nav__list-item">
+										<a href="" class="main-nav__list-item-link">
+											Пунтк меню 3
+										</a>
+									</li>
+								</ul>
+							</nav>
+
 				</div>
 				<div class="page-header__content">
 					<h1 class="page-header__title">
@@ -45,14 +45,17 @@
 	</header>
 
 
+
 	<section class="get-app">
 		<div class="get-app__inner clearfix">
 			<a href="" class="get-app__title">
 				Скачать приложение
 			</a>
-			<img src="" alt="" class="get-app__img get-app__img--appstore">
-			<img src="" alt="" class="get-app__img get-app__img--googleplay">
-			<img src="" alt="" class="get-app__img get-app__img--windowsstore">
+			<div class="get-app__images">
+				<div class="get-app__img get-app__img--appstore"></div>
+				<div class="get-app__img get-app__img--googleplay"></div>
+				<div class="get-app__img get-app__img--windowsstore"></div>
+			</div>
 			<p class="get-app__text">
 				Доступно для iPhone, iPad, Android, Windows phone, Mac OS, Windows 8
 			</p>
@@ -61,38 +64,60 @@
 
 
 	<section class="features">
-		<div class="features__inner clearfix">
-			<h2 class="feartures__title">
-				Устали от серости мегаполиса?
-			</h2>
-			<h2 class="feartures__title">
-				Нам есть, что вам предложить!
-			</h2>
-			<dl class="features__list">
-				<dt class="features__list-title">Поднимает настроение</dt>
-					<dd class="features__list-text">
-						Приложение позволит вам победить осеннюю хандру и деперессию буквально в несколько кликов!
-					</dd>
-				<dt class="features__list-title">Меняет мир вокруг</dt>
-					<dd class="features__list-text">
-						Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
-					</dd>
-				<dt class="features__list-title">Заводит новых друзей</dt>
-					<dd class="features__list-text">
-						Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых
-					</dd>
-			</dl>
-			<img src="" alt="" class="features__img">
+		<div class="features__wrap1">
+			<div class="features__inner clearfix">
+				<div class="features__title-wrap">
+					<h2 class="features__title">
+						Устали от серости мегаполиса?
+					</h2>
+					<h2 class="features__title">
+						Нам есть, что вам предложить!
+					</h2>
+				</div>
+			</div>
+		</div>
+		<div class="features__wrap2">
+			<div class="features__inner clearfix">
+				<dl class="features__list">
+					<dt class="features__list-title">Поднимает настроение</dt>
+						<dd class="features__list-text">
+							Приложение позволит вам победить осеннюю хандру и деперессию буквально в несколько кликов!
+						</dd>
+					<dt class="features__list-title">Меняет мир вокруг</dt>
+						<dd class="features__list-text">
+							Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
+						</dd>
+					<dt class="features__list-title">Заводит новых друзей</dt>
+						<dd class="features__list-text">
+							Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых
+						</dd>
+				</dl>
+				<img src="" alt="" class="features__img">
+			</div>
 		</div>
 	</section>
 
 
 	<section class="review">
 		<div class="review__inner clearfix">
-			<p class="review__user-name">Николай Петров</p>
-			<p class="review__text">
-				«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
-			</p>
+			<div class="review__item">
+				<p class="review__user-name">Николай Петров</p>
+				<p class="review__text">
+					«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+				</p>
+			</div>
+			<div class="review__item review__item--hidden">
+				<p class="review__user-name">Николай Петров</p>
+				<p class="review__text">
+					«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+				</p>
+			</div>
+			<div class="review__item review__item--hidden">
+				<p class="review__user-name">Николай Петров</p>
+				<p class="review__text">
+					«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+				</p>
+			</div>
 			<div class="review__controls">
 				<i class="review__control-item"></i>
 				<i class="review__control-item"></i>

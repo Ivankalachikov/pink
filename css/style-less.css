@@ -1,16 +1,24 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700&subset=latin,cyrillic);
 .page-header {
   background: #1d2631 url("../img/iphone-in-hand-xs.png") bottom center no-repeat, url("../img/header-img-xs.jpg") center center no-repeat;
   color: #fff;
-  min-height: 486px;
-  width: 320px;
   margin: 0 auto;
+  background-color: #1d2631;
+}
+.page-header__inner {
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 486px;
 }
 .page-header__top-line {
   background-color: rgba(0, 0, 0, 0.3);
+  padding: 20px 6%;
+}
+.page-header__top-line:after {
   content: "";
   display: table;
   clear: both;
-  display: block;
 }
 .page-header__content {
   padding-left: 20px;
@@ -32,11 +40,133 @@
   background-position: -15px -287px;
   float: right;
 }
-.page-header__inner {
-  max-width: 320px;
+.page-header__title {
+  text-align: center;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 1,5em;
+  padding-top: 18px;
+}
+.main-nav {
+  display: none;
+}
+body {
+  font-family: "Open Sans", "Arial", sans-serif;
+}
+a {
+  font-family: "Open Sans", "Arial", sans-serif;
+  text-decoration: none;
+}
+.get-app {
+  background-color: #1d2631;
+}
+.get-app__inner {
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 28px;
+  text-align: center;
+  padding-bottom: 32px;
+}
+.get-app__title {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  padding: 13px 40px;
+  line-height: 1,5em;
+  border: 3px solid #fff;
+  border-radius: 28px;
+  margin-bottom: 30px;
+}
+.get-app__images {
+  margin-left: -36px;
+}
+.get-app__img {
+  background-image: url("../img/sprite-xs.png");
+  background-repeat: no-repeat;
+  display: block;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 36px;
+}
+.get-app__img--appstore {
+  width: 46px;
+  height: 57px;
+  background-position: -15px -92px;
+}
+.get-app__img--googleplay {
+  width: 42px;
+  height: 47px;
+  background-position: -15px -15px;
+}
+.get-app__img--windowsstore {
+  width: 44px;
+  height: 42px;
+  background-position: -15px -341px;
+}
+.get-app__text {
+  font-size: 14px;
+  line-height: 1,7em;
+  font-weight: 300;
+  color: #fff;
+  padding: 0 2em;
+}
+.features__inner {
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: #283645;
+  padding-top: 40px;
+}
+.features__title {
+  font-size: 24px;
+  line-height: 1,5em;
+  font-weight: 300;
+  padding-bottom: 30px;
+  padding: 0 2em;
+}
+.features__title-wrap {
+  background-color: #fff;
+}
+.features__wrap1 {
+  padding-bottom: 35px;
+  position: relative;
+}
+.features__wrap1:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -160px;
+  border: 320px solid transparent;
+  border-bottom: 30px solid #f2f2f2;
+  border-right: 100% solid #f2f2f2;
+}
+.features__wrap2 {
+  background-color: #f2f2f2;
+  padding-top: 50px;
+  padding-bottom: 264px;
+  background: #f2f2f2 url("../img/iphone-xs.png") center bottom -43px no-repeat;
+}
+.features__list-title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.33em;
+  margin-bottom: 18px;
+}
+.features__list-text {
+  font-size: 14px;
+  line-height: 1.71em;
+  margin: 0;
+  margin-bottom: 40px;
+}
+.review__inner {
+  width: 320px;
   margin-left: auto;
   margin-right: auto;
 }
-.main-nav {
+.review__item--hidden {
   display: none;
 }

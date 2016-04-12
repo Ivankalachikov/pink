@@ -1,0 +1,56 @@
+@import "variables.less";
+@import "mixin.less";
+
+.get-app {
+	background-color: @bg-color-dark;
+		
+		&__inner{
+			.container();
+			padding-top: 28px;
+			text-align: center;
+			padding-bottom: 32px;
+		}
+
+		&__title{
+			display: inline-block;
+			font-size: 18px;
+			font-weight: 700;
+			color: @white-text;
+			padding:13px 40px;
+			line-height: 1,5em;
+			border: 3px solid #fff;
+			border-radius:28px;
+			margin-bottom: 30px;
+		}
+
+		&__images{
+			margin-left: -36px;
+		}
+
+		&__img{
+			.sprite();
+			display: inline-block;
+			vertical-align: middle;
+			margin-left: 36px;
+		}
+
+		&__img--appstore{
+			.sprite-apple-xs();
+		}
+
+		&__img--googleplay{
+			.sprite-android-xs();
+		}
+
+		&__img--windowsstore{
+			.sprite-winphone-xs();
+		}
+
+		&__text{
+			font-size: 14px;
+			line-height: 1,7em;
+			font-weight: 300;
+			color: @white-text;
+			padding: 0 2em;
+		}
+}
