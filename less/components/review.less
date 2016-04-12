@@ -5,13 +5,63 @@
 
 	&__inner{
 		.container();
+		.clearfix();
+		padding-top: 27px;
+		position: relative;
+		padding-bottom: 65px;
+	}
+
+
+	&__inner:before{
+		content:"";
+		position: absolute;
+		bottom:0;
+		left:50%;
+		margin-left: -160px;
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 0 0 30px 320px;
+		border-color: transparent transparent @bg-color-light transparent;
 	}
 
 	&__item{
-
+		text-align: center;
 	}
 
 	&__item--hidden{
 		display: none;
+	}
+
+	&__user-name{
+		font-size: 18px;
+		line-height: 30px;
+		font-weight: 700;
+		margin-bottom: 25px;
+		margin-top: 25px;
+		color:@black-text;
+	}
+
+	&__text{
+		color:@dark-text;
+		font-size: 14px;
+		line-height: 30px;
+		margin-top:14px;
+		margin-bottom: 31px;
+	}
+
+	&__controls{
+		margin-left: -16px;
+		text-align: center;
+	}
+
+	&__control-item{
+		.switch-control();
+
+	}
+
+	&__control-item--active{
+		.switch-control();
+		.switch-control--active();
 	}
 }

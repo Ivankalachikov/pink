@@ -32,9 +32,11 @@
 		bottom:0;
 		left:50%;
 		margin-left: -160px;
-		border: 320px solid transparent;
-		border-bottom: 30px solid @bg-color-light;
-		border-right:100% solid @bg-color-light;
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 0 0 30px 320px;
+		border-color: transparent transparent @bg-color-light transparent;
 	}
 
 	&__wrap2{

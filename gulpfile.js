@@ -4,17 +4,9 @@ var cleanCSS = require('gulp-clean-css');
 var rename = require('gulp-rename');
 var autoprefixer = require('gulp-autoprefixer');
 var less = require('gulp-less');
- var gls = require('gulp-live-server');
- var notify = require( 'gulp-notify' );
+var notify = require( 'gulp-notify' );
+var livereload = require('gulp-livereload');
 
-gulp.task('serve', function() {
-  //1. serve with default settings 
-  var server = gls.static(); //equals to gls.static('public', 3000); 
-  server.start();
-  gulp.watch(['**/*.css', '*.html'], function (file) {
-    server.notify.apply(server, [file]);
-  });
-});
 
 gulp.task('less', function () {
   return gulp.src('less/style.less')
@@ -41,11 +33,13 @@ gulp.task('default', ['less'], function () {
     .pipe(cleanCSS())
     .pipe(rename('bundle.min.css'))
     .pipe(gulp.dest('out/'))
+		.pipe(livereload());
 });
 
-gulp.task('watch', ['serve'],function() {
+gulp.task('watch',function() {
   gulp.watch('less/**/*.less', ['default']);
-  gulp.watch('css/**/*.css', ['default']);
+  //gulp.watch('css/**/*.css', ['default']);
+  livereload.listen();
  // gulp.watch('*.html', ['less'], ['default']);
 });
 

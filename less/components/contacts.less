@@ -1,0 +1,67 @@
+@import "variables.less";
+@import "mixin.less";
+
+.contacts {
+	padding-top: 50px;
+
+	&__inner{
+		.container();
+		text-align: center;
+		position: relative;
+	}
+
+	&__title{
+		text-align: center;
+		font-size: 24px;
+		line-height: 30px;
+		font-weight: 300;
+		color: @dark-text;
+		margin-bottom: 36px;
+	}
+
+	&__type{
+		font-size: 18px;
+		line-height: 30px;
+		font-weight: 700;
+		margin: 0;
+		margin-bottom: 5px;
+	}
+
+	&__item,
+	&__link{
+		font-size: 24px;
+		line-height: 30px;
+		color:@red-text;
+		font-weight: 300;
+		margin: 0;
+	}
+
+	&__item{
+		margin-bottom: 25px;
+	}
+
+	&__map-link{
+		overflow: hidden;
+		display: block;
+		height: 199px;
+	}
+
+	&__text::before{
+		content:"";
+		border:160px solid transparent;
+		border-top: 32px solid #fff;
+		position: absolute;
+		z-index: 100;
+		bottom:10px;
+		left:0;
+	}
+
+	&__text{
+		padding-bottom: 42px;
+	}
+
+	&__map-img{
+		position: relative;
+		bottom: 446px ;
+	}
+}

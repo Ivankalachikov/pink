@@ -1,3 +1,5 @@
+@import "variables.less";
+
 .sprite () {
 	background-image: url("../img/sprite-xs.png");
   background-repeat: no-repeat;
@@ -54,4 +56,19 @@
 	margin-left: auto;
 	margin-right:auto;
 	
+}
+
+.switch-control(){
+	display: inline-block;
+	width: 6px;
+	height: 6px;
+	background-color: @switch-unactive-color;
+	border-radius:50%;
+	vertical-align: middle;
+	margin-left: 16px;
+}
+
+.switch-control--active(){
+	background-color: #fff;
+	border:3px solid @switch-active-color;
 }

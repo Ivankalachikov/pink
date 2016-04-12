@@ -119,9 +119,12 @@
 				</p>
 			</div>
 			<div class="review__controls">
-				<i class="review__control-item"></i>
-				<i class="review__control-item"></i>
-				<i class="review__control-item"></i>
+				<a href="#">
+					<i class="review__control-item review__control-item--active"></i></a>
+				<a href="#">
+					<i class="review__control-item"></i></a>
+				<a href="#">
+					<i class="review__control-item"></i></a>
 			</div>
 		</div>
 	</section>
@@ -129,13 +132,13 @@
 
 	<section class="price">
 		<div class="price__inner clearfix">
-			<table class=price__>
+			<table class=price__table>
 				<tr>
 					<th class="price__cell-head">
 						<span class="price__tarif">База</span><br>
 						<span class="price__price">1,99 USD</span>
 					</th>
-					<th class="price__cell-head">
+					<th class="price__cell-head price__cell--hit">
 						<span class="price__tarif">Стандарт</span><br>
 						<span class="price__price">3,99 USD</span>
 					</th>
@@ -179,9 +182,12 @@
 				</tr>
 			</table>
 			<div class="price__controls">
-				<i class="price__controls-item"></i>
-				<i class="price__controls-item"></i>
-				<i class="price__controls-item"></i>
+				<a href="">
+					<i class="price__controls-item"></i></a>
+				<a href="">
+					<i class="price__controls-item price__controls-item--active"></i></a>
+				<a href="">
+					<i class="price__controls-item"></i></a>
 			</div>
 		</div>
 	</section>
@@ -189,35 +195,37 @@
 
 	<section class="contacts">
 		<div class="contacts__inner clearfix">
-			<h2 class="contacts__title">
-				Остались вопросы? Свяжитесь с нами!
-			</h2>
-			<dl>
-				<dt class="contacts__type">
-					Звоните:
-				</dt>
-				<dd class="contacts__item">
-					<a href="tel=88001000900" class="contacts__link">
-						8 (800) 1000 900
-					</a>
-				</dd>
-				<dt class="contacts__type">
-					Пишите:
-				</dt>
-				<dd class="contacts__item">
-					<a href="mailto=hello@pinkapp.ru" class="contacts__link">
-						hello@pinkapp.ru
-					</a>
-				</dd>
-				<dt class="contacts__type">
-					Приезжайте в гости:
-				</dt>
-				<dd class="contacts__item">
-						Санкт-Петербург, Невский проспект, д. 20
-				</dd>
-			</dl>
+			<div class="contacts__text">
+				<h2 class="contacts__title">
+					Остались вопросы? Свяжитесь с нами!
+				</h2>
+				<dl>
+					<dt class="contacts__type">
+						Звоните:
+					</dt>
+					<dd class="contacts__item">
+						<a href="tel=88001000900" class="contacts__link">
+							8 (800) 1000 900
+						</a>
+					</dd>
+					<dt class="contacts__type">
+						Пишите:
+					</dt>
+					<dd class="contacts__item">
+						<a href="mailto=hello@pinkapp.ru" class="contacts__link">
+							hello@pinkapp.ru
+						</a>
+					</dd>
+					<dt class="contacts__type">
+						Приезжайте в гости:
+					</dt>
+					<dd class="contacts__item">
+							Санкт-Петербург, Невский проспект, д. 20
+					</dd>
+				</dl>
+			</div>
 			<a href="" class="contacts__map-link">
-				<img src="" alt="" class="contacts__map-img">
+				<img src="img/map-xs.jpg" alt="" class="contacts__map-img" width="320" height="645">
 			</a>
 		</div>
 	</section>
