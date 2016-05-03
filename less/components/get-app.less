@@ -1,17 +1,23 @@
 @import "variables.less";
 @import "mixin.less";
 
-.get-app {
+.header__get-app {
 	background-color: @bg-color-dark;
-		
-		&__inner{
-			.container();
-			padding-top: 28px;
-			text-align: center;
-			padding-bottom: 32px;
+	padding-top: 28px;
+	text-align: center;
+	padding-bottom: 32px;
+	@media(min-width:700px) and (max-width:1200px){
+		background-color: transparent;
+	}
+			@media(min-width:700px) and (max-width:1200px){
+				width:43%;
+				margin-left: 6%;
+				position: relative;
+				left: -6%;
+			}
 		}
 
-		&__title{
+		&-title{
 			display: inline-block;
 			font-size: 18px;
 			font-weight: 700;
@@ -23,35 +29,35 @@
 			margin-bottom: 30px;
 		}
 
-		&__title:hover{
+		&-title:hover{
 			color:darken(@white-text,10%);
 			border-color:darken(@white-text,30%);
 		}
 
-		&__images{
+		&-images{
 			margin-left: -36px;
 		}
 
-		&__img{
+		&-img{
 			.sprite();
 			display: inline-block;
 			vertical-align: middle;
 			margin-left: 36px;
 		}
 
-		&__img--appstore{
+		&-img--appstore{
 			.sprite-apple-xs();
 		}
 
-		&__img--googleplay{
+		&-img--googleplay{
 			.sprite-android-xs();
 		}
 
-		&__img--windowsstore{
+		&-img--windowsstore{
 			.sprite-winphone-xs();
 		}
 
-		&__text{
+		&-text{
 			font-size: 14px;
 			line-height: 1,7em;
 			font-weight: 300;

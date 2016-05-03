@@ -1,0 +1,85 @@
+@import "variables.less";
+@import "mixin.less";
+
+.page-footer{
+	display: none;
+	@media(min-width:700px) and (max-width:1200px){
+		display: inline-block;
+		vertical-align: middle;
+		width: 100%;
+	}
+
+	@media(min-width:1200px) and (max-width:1440px){
+		display: inline-block;
+		vertical-align: middle;
+		width: 100%;
+	}
+
+
+	&__inner{
+		.container();
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		min-height: 125px;
+		width: 78%;
+		margin: 0 auto;
+	}
+
+
+	
+	&__logo-img{
+		background: url("../img/Pink-logo-footer-2@1x.png") 0 0 no-repeat;
+		width: 145px;
+		height: 40px;
+		@media(min-width:1200px) and (max-width:1440px){
+			background: url("../img/Pink-logo-footer-3@1x.png") 0 0 no-repeat;
+			width: 146px;
+			height: 40px;
+		}
+	}
+
+	&__soc-btn-link{
+		display: inline-block;
+		width: 45px;
+		height: 45px;
+		border:3px solid #e9ebec;
+		border-radius:50%;
+		margin: 0 5px;
+	}
+
+	&__soc-btn-img{
+		line-height: 45px;
+		text-align: center;
+	}
+
+	&__soc-btn-img--fb,
+	&__soc-btn-img--tw,
+	&__soc-btn-img--yt{
+		fill:#d22856;
+	}
+
+	&__soc-btn-img--fb:hover,
+	&__soc-btn-img--tw:hover,
+	&__soc-btn-img--yt:hover{
+		fill:#000fff;
+	}
+
+	&__copyright-img--htmlac,
+	&__copyright-img--gluch{
+		fill:#d22856;
+	}
+
+	&__copyright-text{
+		padding: 0 15px;
+		font-size: 18px;
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+	&__copyright-img{
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+}

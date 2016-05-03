@@ -33,7 +33,11 @@ gulp.task('default', ['less'], function () {
     .pipe(cleanCSS())
     .pipe(rename('bundle.min.css'))
     .pipe(gulp.dest('out/'))
-		.pipe(livereload());
+		.pipe(livereload())
+     notify ({
+      message: "Done",
+      title  : "Sass ok!"
+    });
 });
 
 gulp.task('watch',function() {

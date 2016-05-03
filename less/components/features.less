@@ -7,56 +7,303 @@
 		text-align: center;
 		color:@dark-text;
 		padding-top: 40px;
+		@media(min-width:1200px) and (max-width:1440px){
+			padding-top: 60px;
+			padding-bottom: 40px;
+		}
 	}
 
 	&__title{
+		bacground-size: 50% 100%;
 		font-size: 24px;
 		line-height: 1,5em;
 		font-weight: 300;
 		padding-bottom: 30px;
 		padding: 0 2em;
+		@media(min-width:700px) and (max-width:1200px){
+			font-size: 40px;
+			line-height: 1.1;
+			margin: 0;
+			padding: 0 20px;
+			&--narrow{
+				padding: 0 60px;
+				margin-bottom: 100px;
+			}
+		}
+
+		@media(min-width:1200px) and (max-width:1440px){
+			font-size: 50px;
+			line-height: 1.1;
+			margin: 0;
+			padding: 0 20px;
+			&--narrow{
+				padding: 0 20%;
+				margin-bottom: 130px;
+			}
+		}
 	}
+
 
 	&__title-wrap{
 		background-color: #fff;
 	}
+
 
 	&__wrap1{
 		padding-bottom: 35px;
 		position: relative;
 	}
 
+
 	&__wrap1:after{
 		content:"";
+		background: url("../img/bg-triangle.png") 0 0 no-repeat;
+		background-size: 100% 100%;
+		width: 100%;
+		height: 30px;
+		display: inline-block;
 		position: absolute;
 		bottom:0;
-		left:50%;
-		margin-left: -160px;
-		width: 0;
-		height: 0;
-		border-style: solid;
-		border-width: 0 0 30px 320px;
-		border-color: transparent transparent @bg-color-light transparent;
+		@media(min-width:700px) and (max-width:1200px){
+			height:55px;
+		}
+
+		@media(min-width:1200px) and (max-width:1440px){
+			height: 100px;
+		}
 	}
 
+
 	&__wrap2{
-		background-color: @bg-color-light;
-		padding-top: 50px;
+		position: relative;
+		padding-top: 10px;
 		padding-bottom: 264px;
-		background: @bg-color-light url("../img/iphone-xs.png") center bottom -43px no-repeat;
+		background-color: @bg-color-light;
+		@media(min-width:700px) and (max-width:1200px){
+			padding-top: 0;
+			padding-bottom: 10px;
+		}
+		@media(min-width:1200px) and (max-width:1440px){
+			padding-bottom: 0;
+		}
 	}
+
+
+	&__list{
+		@media(min-width:700px) and (max-width:1200px){
+			margin-left: 50%;
+			text-align: left;
+		}
+		@media(min-width:1200px) and (max-width:1440px){
+			width: 940px;
+			margin: 0 auto;
+			display: flex;
+			flex-direction:row;
+			justify-content: space-between;
+		}
+	}
+
+	&__item{
+		@media(min-width:1200px) and (max-width:1440px){
+			width: 300px;
+		}
+	}
+
 
 	&__list-title{
 		font-size: 18px;
 		font-weight: 700;
-		line-height: 1.33em;
+		line-height: 1.33;
 		margin-bottom: 18px;
+		color: #000;
+		@media(min-width:700px) and (max-width:1200px){
+			margin-bottom: 14px;
+		}
+		@media(min-width:1200px) and (max-width:1440px){
+			font-size: 30px;
+			line-height: 36px;
+		}
 	}
+
 
 	&__list-text{
 		font-size: 14px;
-		line-height: 1.71em;
+		line-height: 1.71;
 		margin: 0;
 		margin-bottom: 40px;
+		@media(min-width:1200px) and (max-width:1440px){
+			font-size: 18px;
+			line-height: 30px;
+		}
 	}
+
+
+	&__img{
+		position: absolute;
+		bottom:0;
+		margin: 0 auto;
+	  left:50%;
+		margin-left: -78px;
+		background: url("../img/iphone-xs.png") 0 0 no-repeat;
+		width: 157px;
+		height: 279px;
+		@media(min-width:700px) and (max-width:1200px){
+			left: 17%;
+			bottom: 0;
+			background: url("../img/iphone-md.png") 0 0 no-repeat;
+			width: 268px;
+			height: 482px;
+		}
+		@media(min-width:1200px) and (max-width:1440px){
+			display: none;
+		}
+	}
+
+	&__img--hidden{
+		display: none;
+		@media(min-width:1200px) and (max-width:1440px){
+			display: inline-block;
+		}
+	}
+
+
+	&__img--step1{
+		background: url("../img/iphone-screen-3-1@1x.png") 0 0 no-repeat;
+		width: 292px;
+		height: 302px;
+	}
+
+	&__img--step2{
+		background: url("../img/iphone-screen-3-2@1x.png") 0 0 no-repeat;
+		width: 292px;
+		height: 302px;
+	}
+
+	&__img--step3{
+		background: url("../img/iphone-screen-3-3@1x.png") 0 0 no-repeat;
+		width: 292px;
+		height: 302px;
+	}
+
+	
+
+	&__wrap3{
+		position: relative;
+		display: none;
+		.clearfix();
+			@media(min-width:700px) and (max-width:1200px){
+				display: inline-block;
+				min-height:306px;
+				padding-bottom: 75px;
+			}
+			@media(min-width:1200px) and (max-width:1440px){
+				display: inline-block;
+				background-color: @bg-color-light;
+				padding-bottom: 60px;
+			}
+	}
+	
+	&__research-textwrap{
+		@media(min-width:700px) and (max-width:1200px){
+			padding-left: 50%;
+			text-align:left;
+			width: 47%;
+		}
+		@media(min-width:1200px) and (max-width:1440px){
+			padding-left: 50%;
+			text-align:left;
+			width: 47%;
+		}
+	}
+	
+
+	&__research-img{
+		position: absolute;
+		background: url("../img/timer-2.svg") 0 0 no-repeat;
+		@media(min-width:700px) and (max-width:1200px){
+			width: 263px;
+			height: 306px;
+			left:6%;
+			top: 50px;
+		}
+		@media(min-width:1200px) and (max-width:1440px){
+			background: url("../img/timer-3.svg") 0 0 no-repeat;
+			width: 300px;
+			height: 346px;
+			left:16%;
+			top: 0;
+		}
+	}
+
+
+	&__research-img-text{
+		position: relative;
+		display: inline-block;
+		font-weight: 700;
+		color: #d22856;
+		@media(min-width:700px) and (max-width:1200px){
+			height: 180px;
+			width: 180px;
+			line-height: 180px;
+			font-size: 106px;
+			border: 10px solid #d22856;
+			border-radius:50%;
+			top: 65px;
+		}
+		@media(min-width:1200px) and (max-width:1440px){
+			height: 190px;
+			width: 190px;
+			line-height: 180px;
+			font-size: 120px;
+			border: 15px solid #d22856;
+			border-radius:50%;
+			top: 60px;
+			left:-20px;
+		}
+	}
+
+
+	&__reseach-title{
+		@media(min-width:700px) and (max-width:1200px){
+			font-size: 30px;
+			font-weight: 700;
+			line-height: 36px;
+			padding-top: 20px;
+		}
+		@media(min-width:700px) and (max-width:1200px){
+			font-size: 30px;
+			font-weight: 700;
+			line-height: 36px;
+			padding-top: 20px;
+		}
+	}
+
+
+	&__research-text{
+		color: @dark-text;
+		@media(min-width:700px) and (max-width:1200px){
+			font-size: 14px;
+			line-height: 24px;
+		}
+		@media(min-width:1200px) and (max-width:1440px){
+			font-size: 18px;
+			line-height: 30px;
+		}
+	}
+
+
+	&__research-link{
+		text-decoration: underline;
+		color: #d22856;
+		@media(min-width:700px) and (max-width:1200px){
+			font-size: 14px;
+			line-height: 24px;
+		}
+		@media(min-width:1200px) and (max-width:1440px){
+			font-size: 18px;
+			line-height: 30px;
+		}
+	}
+
+
 }
